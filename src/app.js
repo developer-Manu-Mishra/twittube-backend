@@ -25,6 +25,10 @@ app.use(express.static("public"))
 
 app.use(cookieParser())
 
+app.get("/", (req, res) => {
+    res.send("<h1 style='text-align:center'>Twittube Server is up and running</h1>")
+})
+
 
 
 export {app}
